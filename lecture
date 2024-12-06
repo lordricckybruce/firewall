@@ -1,0 +1,35 @@
+firewalls and ids are related but not the same 
+while fire walls are for packet filterng,tracking of site of active connections and make 
+decision on the conetxt of traffic <stateful firewalls>
+for proxy firewalls to intercept request
+
+#IDS ---- 
+IDS monitor networks and alerting
+
+
+
+firewalls actively blocks or allows trffic 
+ids passively monitiors and generate alerts
+
+No, IDS are not firewalls. While firewalls block and control traffic, IDS systems only detect and alert on potential threats. Combining both provides better protection for your network and systems.
+
+
+
+#Firewall with python
+Yes, **Rust** can absolutely be used to build a firewall, though it's less common than using languages like Python or C due to its focus on safety and performance. Rust's memory safety features, along with its speed, make it a great choice for building a fast, secure, and efficient firewall system.
+
+However, for most firewall implementations, languages like **Python** are preferred for ease of development, rapid prototyping, and large library support, while **Rust** might be chosen for situations requiring high performance and low-level control over network traffic, or if you want to leverage Rust's performance benefits for high-traffic systems.
+
+### Here's a comparison:
+
+- Python: You'd typically use existing libraries like `iptables` (via system calls), `scapy`, or `socket` to handle packet filtering, since Python offers more abstraction.
+  
+- Rust: You’d need to either directly work with system-level APIs like `libpcap` (which C libraries use) or implement low-level packet inspection using `pnet` or similar crates. This can provide better performance and memory safety guarantees but requires more effort in terms of setup and lower-level management.
+
+---
+
+### **Which one would you prefer?**
+- Firewall in Python: Easier to get started, especially for learning purposes.
+- Firewall in Rust: Higher performance and safety, but it might be more complex to set up initially.
+
+Let me know which one you’d like to focus on, and I’ll guide you step by step!
